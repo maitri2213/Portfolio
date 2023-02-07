@@ -1,423 +1,678 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/logo-colored.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+    />
+    <title>Valesh Gopal</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="#home">
+          <img src="images/logo-colored.png" alt="logo" class="logo" />
+        </a>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+          <a href="#contact" class="btn hire-me">Hire Me <span>/></span></a>
+        </div>
+        <button id="menu-btn" class="hamburger">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+        <div id="menu" class="menu hidden">
+          <a href="#home" class="mobile-menu-link">Home</a>
+          <a href="#about" class="mobile-menu-link">About</a>
+          <a href="#portfolio" class="mobile-menu-link">Portfolio</a>
+          <a href="#blog" class="mobile-menu-link">Blog</a>
+          <a href="#contact" class="mobile-menu-link">Contact</a>
+          <div>
+            <a
+              href="https://github.com/valeshgopal"
+              target="_blank"
+              class="mobile-menu-link"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/valeshgopal"
+              target="_blank"
+              class="mobile-menu-link"
+            >
+              <i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a
+              href="https://behance.net/valeshg"
+              target="_blank"
+              class="mobile-menu-link"
+              ><i class="bx bxl-behance"></i
+            ></a>
+            <a
+              href="https://twitter.com/0xvalesh"
+              target="_blank"
+              class="mobile-menu-link"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="container">
+      <section class="section-hero" id="home">
+        <div class="intro-section">
+          <p class="intro">Hello, 👋 I am <span class="intro-line"></span></p>
+          <p class="name">Valesh Gopal</p>
+          <div class="jobs">
+            <span>Frontend developer</span>
+            <span>UI designer</span>
+            <span>Frontend developer</span>
+          </div>
+        </div>
+        <article class="hero-text">
+          I'm a front-end developer located in India. I love to create beautiful
+          and smooth websites with great user experience.
+        </article>
+        <article class="hero-text">
+          I'm open to learning, adapt to work in a team, freelance
+          opportunities, contract jobs and use skills to solve complex UI
+          challenges and provide value to the growth of an organization.
+        </article>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn">See my projects</a>
+          <a download href="files/Valesh's Resume.pdf" class="btn-secondary"
+            >Download resume
+          </a>
+        </div>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+        <div class="social-links">
+          <div class="social-line"></div>
+          <a href="https://github.com/valeshgopal" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/valeshgopal" target="_blank">
+            <i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://behance.net/valeshg" target="_blank"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="https://twitter.com/valeshdev" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <div class="social-line"></div>
+        </div>
+        <img src="images/developer_male.png" class="hero-img" />
+      </section>
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+      <section class="about" id="about">
+        <h3 class="section-heading">About me</h3>
+        <div class="about-content">
+          <img src="images/coder.gif" />
+          <div class="about-text">
+            <p>
+              Hello! My name is Valesh, a frontend developer and an aspiring
+              full-stack (MERN) developer.
+            </p>
+            <p>
+              The scope of my work is a large part of frontend which includes
+              PSD to HTML, design, coding layouts, single page applications,
+              responsive websites, web apps, CSS/JS animations, and other work
+              based on web development and javascript.
+            </p>
+            <p>
+              I like to code things for web, and enjoy bringing ideas to life in
+              the browser. I'm always open to adapt to work with team and work
+              on new frontend skills and technology.
+            </p>
+          </div>
+        </div>
+      </section>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+      <section class="myskills">
+        <h3 class="section-heading">My Skills</h3>
+        <div class="myskills-content">
+          <div class="myskills-icons">
+            <div class="icon-container">
+              <p class="tooltip">HTML</p>
+              <i class="devicon-html5-plain colored html-icon"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip">CSS</p>
+              <i class="devicon-css3-plain colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip js-tooltip">Javascript</p>
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip js-tooltip">Typescript</p>
+              <i class="devicon-typescript-plain colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip sass-tooltip">SASS</p>
+              <i class="devicon-sass-original colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip tailwind-tooltip">Tailwind</p>
+              <img src="images/Tailwind_CSS_Logo.svg" />
+            </div>
+            <div class="icon-container">
+              <p class="tooltip">React</p>
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip node-tooltip">Node JS</p>
+              <i class="devicon-nodejs-plain-wordmark colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip express-tooltip">Express JS</p>
+              <i class="devicon-express-original-wordmark"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip mongo-tooltip">MongoDB</p>
+              <i class="devicon-mongodb-plain colored"></i>
+            </div>
+            <!-- <div class="icon-container">
+              <p class="tooltip solidity-tooltip">Solidity</p>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
+              />
+            </div> -->
+            <div class="icon-container">
+              <p class="tooltip">Figma</p>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              />
+            </div>
+            <div class="icon-container">
+              <p class="tooltip ps-tooltip">Photoshop</p>
+              <i class="devicon-photoshop-plain colored"></i>
+            </div>
+          </div>
+          <img src="images/astronaut-1.png" class="astronaut" />
+        </div>
+      </section>
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image:url(images/Profilephoto.png);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Maitri Patel</a></h1>
-				<span class="position"><a href="#">Web Designer</a> in India</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+      <section class="portfolio" id="portfolio">
+        <h3 class="section-heading">Portfolio</h3>
+        <p class="sub-heading">
+          Please have a look at three portfolio projects with demonstration.
+        </p>
+        <div class="project">
+          <a href="https://valesh.dev/coin-list" target="_blank">
+            <img src="images/coinlist.png" class="project-img" />
+          </a>
+          <div class="project-details">
+            <a href="https://valesh.dev/coin-list" target="_blank">
+              <h3>Coin List - Cryptocurrencies</h3>
+            </a>
+            <div class="tags">
+              <div>
+                <span>React</span>
+                <span>CSS</span>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/valeshgopal/coin-list"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="http://valesh.dev/coin-list/" target="_blank">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              A display of top 50 cryptocurrencies with their details and
+              real-time prices.
+            </p>
 
-			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Distributed by <a href="#" target="_blank">ThemeWagon</a></span> <span>Images: <a href="#" target="_blank">Unsplash.com</a></span></small></p>
-				<ul>
-					<li><a href="#"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-				</ul>
-			</div>
+            <div class="project-features">
+              <h3>Features</h3>
+              <p>
+                Track the price of each cryptocurrency and display it in real
+                time with its 24-hour highs and lows and its historical
+                fluctuations.
+              </p>
+            </div>
+            <div class="project-challenges">
+              <h3>Challenges</h3>
+              <p>
+                Fetching data using crypto API and displaying it in real time
+                using state management in React.
+              </p>
+            </div>
+          </div>
+        </div>
 
-		</aside>
+        <div class="project project-2">
+          <a href="http://valesh.dev/chat-app/" target="_blank">
+            <img src="images/chat-app.png" class="project-img" />
+          </a>
+          <div class="project-details">
+            <a href="http://valesh.dev/chat-app/" target="_blank">
+              <h3>Chat App Frontend UI</h3>
+            </a>
+            <div class="tags">
+              <div>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/valeshgopal/chat-app"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://valesh.dev/chat-app/" target="_blank">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              A chat application user interface that enables a user to preview
+              his/her chat messages.
+            </p>
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image:">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi! <br>I'm Maitri</h1>
-						   					<h2>100% html5 Portfolio template Made by <b>Maitri</b></h2>
-												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li style="background-image:">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>I am <br>a  Web Designer</h1>
-											   <h2>100% html5 Portfolio template Made by <b>Maitri Patel</b></h2>
-												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
+            <div class="project-features">
+              <h3>Features</h3>
+              <ul>
+                <li>➤ Edit profile name and designation</li>
+                <li>➤ Search your friends</li>
+                <li>➤ Preview chat messages with date and time</li>
+              </ul>
+            </div>
+            <div class="project-challenges">
+              <h3>Challenges</h3>
+              <p>
+                Made extensive use of DOM manipulation techniques that gave me a
+                good practice to build fairly complex and functional javascript
+                applications.
+              </p>
+            </div>
+          </div>
+        </div>
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Us</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Maitri Patel</strong> I want to improve my skills. I want to gain more experiences and I want to grow my career step by step. I will achieve my goal in my life and I trust myself.</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-bulb"></i></span>
-										<h3>Graphic Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3>Web Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Software</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-phone3"></i></span>
-										<h3>Application</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p></p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Javascript</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:55%">
-								    <span>55%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>jQuery</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								    <span>60%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>HTML5</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>CSS3</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>PHP</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:50%">
-								    <span>50%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Bootstrap</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:30%">
-								    <span>30%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <div class="project">
+          <a href="http://valesh.dev/mcdonalds-india/" target="_blank">
+            <img src="images/mcdonalds.png" class="project-img" />
+          </a>
+          <div class="project-details">
+            <a href="http://valesh.dev/mcdonalds-india/" target="_blank">
+              <h3>McDonald's India Clone</h3>
+            </a>
+            <div class="tags">
+              <div>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/valeshgopal/mcdonalds-india"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://valesh.dev/mcdonalds-india/" target="_blank">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              Had so much fun developing the clone of McDonald's India
+              website(mcdindia.com). One of my first major projects in CSS that
+              gave the necessary boost to my confidence in building complex
+              layouts.
+            </p>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Engineering
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p>Pursuing B.E(Computer Engineering) at LDRP Gandhinagar.<br>
-													(Third Year)</p>
-									        </div>
-									    </div>
-									</div>
-									
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFive">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-									        <div class="panel-body">
-									            <p>Completed my 12th Science from Mehsana.<br>
-													(Grade-78%)</p>	
-									        </div>
-									    </div>
-									</div>
-								</div><br>
-							</div><br>
-						</div><br><br>
-					</div><br>
-				</div>
-			</section>
+            <div class="project-features">
+              <h3>Challenges</h3>
+              <p>
+                The primary challenge is to make the clone look as identical as
+                possible to the original website. At first glance, the website
+                looks overwhelming, but I focussed on one section and one
+                component at a time. I'm happy with the way the clone turned
+                out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+      <section class="projects-addl">
+        <h3 class="section-heading">Additional Projects</h3>
+        <p class="sub-heading">
+          Check out some additional projects, divided into categories.
+        </p>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+        <div class="projects">
+          <div class="addl-project">
+            <i class="devicon-css3-plain"></i>
+            <a href="https://valesh.dev/frontend-projects/" target="_blank">
+              <h3>Frontend UI Projects</h3>
+            </a>
+            <p>
+              Improving front-end coding skills by building real HTML, CSS and
+              JavaScript challenges whilst working on professional designs.
+            </p>
+            <div class="project-footer">
+              <div class="tags">
+                <div>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>SASS</span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/valeshgopal/frontend-projects"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://valesh.dev/frontend-projects/" target="_blank">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="addl-project">
+            <i class="devicon-javascript-plain"></i>
+            <a
+              href="https://jsfiddle.net/user/valeshgopal/fiddles/"
+              target="_blank"
+            >
+              <h3>Javascript Projects</h3>
+            </a>
+            <p>
+              A demo of various javascript projects showcasing the understanding
+              and implementatiion of ES6 features, DOM manipulation,
+              asynchronous JS etc.
+            </p>
+            <div class="project-footer">
+              <div class="tags">
+                <div>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/valeshgopal/javascript-projects"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a
+                  href="https://jsfiddle.net/user/valeshgopal/fiddles/"
+                  target="_blank"
+                >
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="addl-project">
+            <img
+              src="images/fimga-logo.png"
+              style="width: 42.4px; padding: 0.7em; box-sizing: content-box"
+            />
+            <a href="https://www.behance.net/valeshg" target="_blank">
+              <h3>Figma Projects</h3>
+            </a>
+            <p>
+              UI designs for web and mobile designed in Figma. Demonstrates
+              implementation of auto-layout, components and variants.
+            </p>
+            <div class="project-footer">
+              <div class="tags">
+                <div>
+                  <span>Figma</span>
+                  <span>Photoshop</span>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.behance.net/valeshg" target="_blank">
+                  <i class="bx bxl-behance"></i>
+                </a>
+                <a href="https://dribbble.com/valesh" target="_blank">
+                  <i class="bx bxl-dribbble"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="addl-project">
+            <i class="devicon-react-original"></i>
+            <a href="https://valesh.dev/react-projects" target="_blank">
+              <h3>React Projects</h3>
+            </a>
+            <p>
+              A collection of React projects using functional components, hooks,
+              react router, material UI and typescript.
+            </p>
+            <div class="project-footer">
+              <div class="tags">
+                <span>React</span>
+                <span>Typescript</span>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/valeshgopal/react-projects"
+                  target="_blank"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://valesh.dev/react-projects" target="_blank">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="addl-project">
+            <i class="devicon-nodejs-plain"></i>
+            <a href="#">
+              <h3>Node JS Projects</h3>
+            </a>
+            <p style="margin-bottom: 4rem">Coming Soon!</p>
+            <div class="project-footer">
+              <div class="tags">
+                <span>Node Js</span>
+                <span>Express Js</span>
+              </div>
+              <div>
+                <a href="#">
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="addl-project">
+            <img src="images/solidity-logo.png" />
+            <a href="#">
+              <h3>Solidity Projects</h3>
+            </a>
+            <p style="margin-bottom: 4rem">Coming Soon!</p>
+            <div class="project-footer">
+              <div class="tags">
+                <span>Solidity</span>
+                <span>React</span>
+              </div>
+              <div>
+                <a href="#">
+                  <i class="bx bxl-github"></i>
+                </a>
+                <a href="">
+                  <i class="bx bx-desktop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Web Developer</a> <span> Nov 2022</span></h2>
-					                  <p></p>
-					               </div>
-					            </div>
-					         </article>					        
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-				
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="#">maitripatl2213@gmail.com</a></p>
-								</div>
-							</div>
+      <section class="blog" id="blog">
+        <h3 class="section-heading">My Blog</h3>
+        <div class="blog-container">
+          <div class="blog-post">
+            <a
+              href="https://dev.to/valeshdev/css-box-model-simplified-4en4"
+              target="_blank"
+            >
+              <img src="images/blog-post-1.png" />
+            </a>
+            <div class="blog-details">
+              <a
+                href="https://dev.to/valeshdev/css-box-model-simplified-4en4"
+                target="_blank"
+              >
+                <h3>CSS Box Model Simplified</h3>
+              </a>
+              <p>
+                Each element on a web page is wrapped around by a box. The
+                arrangement of these boxes makes up the layout of the website.
+                Building layouts is a crucial part of...
+              </p>
+              <a
+                href="https://dev.to/valeshdev/css-box-model-simplified-4en4"
+                target="_blank"
+                class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="blog-post">
+            <a
+              href="https://dev.to/valeshdev/em-vs-rem-how-to-use-them-1ogl"
+              target="_blank"
+            >
+              <img src="images/blog-post-2.png" />
+            </a>
+            <div class="blog-details">
+              <a
+                href="https://dev.to/valeshdev/em-vs-rem-how-to-use-them-1ogl"
+                target="_blank"
+              >
+                <h3>em vs rem - When to use them?</h3>
+              </a>
+              <p>
+                em and rem are two of the most commonly used CSS relative units.
+                They are also one of the most common sources of confusion among
+                beginners.
+              </p>
+              <a
+                href="https://dev.to/valeshdev/em-vs-rem-how-to-use-them-1ogl"
+                target="_blank"
+                class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="blog-post">
+            <a
+              href="https://dev.to/valeshdev/how-to-host-your-web-applications-on-github-pages-4aio"
+              target="_blank"
+            >
+              <img src="images/github pages.jpg" />
+            </a>
+            <div class="blog-details">
+              <a
+                href="https://dev.to/valeshdev/how-to-host-your-web-applications-on-github-pages-4aio"
+                target="_blank"
+              >
+                <h3>How to use Github Pages</h3>
+              </a>
+              <p>
+                Github provides a free hosting service to help your websites go
+                live online. It is called Github Pages. Github Pages builds a
+                static website from the HTML, CSS and Javascript files...
+              </p>
+              <a
+                href="https://dev.to/valeshdev/how-to-host-your-web-applications-on-github-pages-4aio"
+                target="_blank"
+                class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>Mehsana, Gujarat,India,384002</p>
-								</div>
-							</div>
+      <section class="contact" id="contact">
+        <h3 class="section-heading">Contact Me</h3>
+        <p class="sub-heading">
+          Please drop a message. I will reach out as soon as possible.
+        </p>
+        <div class="form">
+          <form
+            action="https://formsubmit.co/d3a1e88ea9629691113074bdd68e3785 "
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="msg-box"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="msg-box"
+              required
+            />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://valesh.dev/pages/thankyou.html"
+            />
+            <input type="hidden" name="_subject" value="New Email!" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
 
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+91 9328838692</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
-										</div>
-										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-										</div>
-									</form>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-	</body>
+            <button type="submit" class="btn send-msg">Send Message /></button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <div class="footer-info">
+        <a href="#home">
+          <img src="images/logo-colored.png" alt="logo" class="logo" />
+        </a>
+        <p>Built 💻 with lots of ⚡❤️‍🔥🚀 by Valesh Gopal</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
